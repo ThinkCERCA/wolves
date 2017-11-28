@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from flask import Markup
-import xlrd
+# import xlrd
 
 COPY_XLS = 'data/copy.xls'
 
@@ -132,39 +132,39 @@ class Copy(object):
         """
         Parses the downloaded .xls file and writes it as JSON.
         """
-        try:
-            book = xlrd.open_workbook(COPY_XLS)
-        except IOError:
-            raise CopyException('"%s" does not exist. Have you run "fab update_copy"?' % COPY_XLS)
+        # try:
+        #     book = xlrd.open_workbook(COPY_XLS)
+        # except IOError:
+        #     raise CopyException('"%s" does not exist. Have you run "fab update_copy"?' % COPY_XLS)
 
-        for sheet in book.sheets():
-            columns = sheet.row_values(0)
-            rows = []
+    #     for sheet in book.sheets():
+    #         columns = sheet.row_values(0)
+    #         rows = []
 
-            for n in range(1, sheet.nrows):
-                # Sheet takes array of rows
-                rows.append(dict(zip(columns, sheet.row_values(n))))
+    #         for n in range(1, sheet.nrows):
+    #             # Sheet takes array of rows
+    #             rows.append(dict(zip(columns, sheet.row_values(n))))
 
-            self._copy[sheet.name] = Sheet(sheet.name, rows, columns)
+    #         self._copy[sheet.name] = Sheet(sheet.name, rows, columns)
 
-    def json(self):
-        """
-        Serialize the copy as JSON.
-        """
-        import json
+    # def json(self):
+    #     """
+    #     Serialize the copy as JSON.
+    #     """
+    #     import json
 
-        obj = {}    
+    #     obj = {}    
     
-        for name, sheet in self._copy.items():
-            if 'key' in sheet._columns:
-                obj[name] = {}
+    #     for name, sheet in self._copy.items():
+    #         if 'key' in sheet._columns:
+    #             obj[name] = {}
 
-                for row in sheet:
-                    obj[name][row['key']] = row._row['value']
-            else:
-                obj[name] = []
+    #             for row in sheet:
+    #                 obj[name][row['key']] = row._row['value']
+    #         else:
+    #             obj[name] = []
                 
-                for row in sheet:
-                    obj[name].append(row._row)
+    #             for row in sheet:
+    #                 obj[name].append(row._row)
             
-        return json.dumps(obj)
+    #     return json.dumps(obj)
