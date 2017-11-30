@@ -55,28 +55,9 @@
 	{% block content %}
     {% endblock content %}
 
-    <footer>
-        <div class="primary">
-            <ul>
-                <li><a href="https://www.npr.org" data-action="Click Logo"><img src="https://media.npr.org/chrome/news/nprlogo_138x46.gif" alt="NPR Logo"></a></li>
-                <li class="news"><a href="http://www.npr.org/sections/news/">News</a></li>
-                <li class="artslife"><a href="http://www.npr.org/sections/arts/">Arts &amp; Life</a></li>
-                <li class="music"><a href="http://www.npr.org/music/">Music</a></li>
-                <li class="programs"><a href="http://www.npr.org/programs/">Programs</a></li>
-                <li class="listen"><a href="http://www.npr.org/listen/">Listen</a></li>
-                <li class="about"><a href="http://www.npr.org/about/">About</a></li>
-            </ul>
-        </div>
-        <div class="secondary">
-            <p>&copy;2014 NPR</p>
-            <ul>
-                <li id="footerContact"><a href="http://help.npr.org/npr/includes/customer/npr/custforms/contactus.aspx">Contact</a></li>
-                <li><a href="http://www.npr.org/about/termsofuse.html">Terms of Use</a></li>
-                <li><a href="http://www.npr.org/about/privacypolicy.html">Privacy</a></li>
-                <li><a href="http://thin.npr.org/">Text-Only</a></li>
-            </ul>
-        </div>
-    </footer>
+    <!-- <footer>
+
+    </footer> -->
 
     {% endblock outer_content %}
 
@@ -135,33 +116,6 @@
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-
-
-    <!-- CHARTBEAT -->
-    <script type="text/javascript">
-        var _sf_async_config={};
-        /** CONFIGURATION START **/
-        _sf_async_config.uid = 18888;
-        _sf_async_config.domain = "npr.org";
-        /** CONFIGURATION END **/
-        (function(){
-            function loadChartbeat() {
-                window._sf_endpt=(new Date()).getTime();
-                var e = document.createElement("script");
-                e.setAttribute("language", "javascript");
-                e.setAttribute("type", "text/javascript");
-                e.setAttribute("src",
-                    (("https:" == document.location.protocol) ?
-                     "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" :
-                     "http://static.chartbeat.com/") +
-                    "js/chartbeat.js");
-                document.body.appendChild(e);
-            }
-            var oldonload = window.onload;
-            window.onload = (typeof window.onload != "function") ?
-                loadChartbeat : function() { oldonload(); loadChartbeat(); };
         })();
     </script>
 </body>
