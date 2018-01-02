@@ -24,8 +24,8 @@
 
 // General styles
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: "Gotham SSm", helvetica, arial, sans-serif;
-	font: 16px/1.5em "Gotham SSm", helvetica, arial, sans-serif;
+	font-family: "Roboto", helvetica, arial, sans-serif;
+	font: 16px/1.5em "Roboto", helvetica, arial, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -493,7 +493,7 @@ color: #fff;
 //mute button for ambient audio
 .toggle-ambi {
 	position: fixed;
-	top: 230px;
+	top: 270px;
 	right: 20px;
 	.touch & {
 		top: 0;
@@ -538,7 +538,7 @@ color: #fff;
 		line-height: 1.2;
 	}
 
-	h3, h4 {
+	h3 {
 		font-size: 24px;
 		font-weight: bold;
 		line-height: 1.1;
@@ -548,7 +548,34 @@ color: #fff;
 		}
 	}
 
-	h5, p {
+	h4 {
+		font-size: 20px;
+		line-height: 1.2;
+		letter-spacing: 1px;
+		@media @screen-small-above {
+			font-size: 30px;
+		}
+	}
+
+	h4.tip {
+	    text-transform: uppercase;
+    	text-decoration: underline;
+    	text-underline-position: under;
+	}
+
+	h5 {
+		color: #555;
+		font-size: 16px;
+		font-style: italic;
+		line-height: 1.4;
+		margin: 30px 0;
+		@media @screen-small-above {
+			font-size: 18px;
+			line-height: 1.7;
+		}
+	}	
+
+	p {
 		font-size: 13px;
 		line-height: 1.4;
 		margin: 30px 0;
