@@ -70,7 +70,7 @@ SERVER_SERVICES = [
 # These variables will be set at runtime. See configure_targets() below
 S3_BUCKETS = []
 S3_ACL = 'private'
-S3_BASE_URL = ''
+S3_BASE_URL = 'https://happy.thinkcerca.com'
 SERVERS = []
 SERVER_BASE_URL = ''
 DEFAULT_MAX_AGE = 20
