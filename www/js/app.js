@@ -355,7 +355,7 @@ var on_waypoint = function(element, direction) {
     }
 
     // If this is a chapter waypoint, run the chapter transitions.
-    if ($(element).children('.edge-to-edge')){
+    if ($(element).children('.edge-to-edge-audio')){
         $(element).addClass('chapter-active');
     }
 };
@@ -519,7 +519,7 @@ $(document).ready(function() {
 	$('.share').popover({
         'selector': '',
         'placement': 'left',
-        'content': '<a target="_blank" href="https://twitter.com/intent/tweet?text=The elusive gray wolf and the people who love/hate them, via @nprnews. https://pbs.twimg.com/media/BfUL3tHIgAAqTnF.jpg&url=http://apps.npr.org/wolves/&original_referer=@nprviz"><i class="fa fa-twitter"></i></a> <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://apps.npr.org/wolves/"><i class="fa fa-facebook-square"></i></a>',
+        'content': '<a target="_blank" href="https://twitter.com/intent/tweet?text=A happy, noisy classroom takes the best parts of childhood - the silliness, the spark, the itch to communicate and question - and uses them to the advantage and benefit of learning. Via @ThinkCERCA https://happy.thinkcerca.com"><i class="fa fa-twitter"></i></a> <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https://happy.thinkcerca.com"><i class="fa fa-facebook-square"></i></a>',
         'html': 'true'
       });
 

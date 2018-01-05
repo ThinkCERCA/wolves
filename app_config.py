@@ -14,7 +14,7 @@ import os
 NAMES
 """
 # Project name used for display
-PROJECT_NAME = 'Wolves At The Door'
+PROJECT_NAME = 'Happy, Noisy Classrooms'
 
 # Project name in urls
 # Use dashes, not underscores!
@@ -79,47 +79,40 @@ DEBUG = True
 """
 COPY EDITING
 """
-COPY_GOOGLE_DOC_KEY = '1Ky4wisOkGt3vQp_49_DqC_Ahb3wbVwJQ7xTMrEYv_gg'
+# COPY_GOOGLE_DOC_KEY = '1Ky4wisOkGt3vQp_49_DqC_Ahb3wbVwJQ7xTMrEYv_gg'
 
 """
 SHARING
 """
-PROJECT_DESCRIPTION = 'The elusive gray wolf and the people who love/hate them.'
-SHARE_URL = 'http://%s/%s/' % (PRODUCTION_S3_BUCKETS[0], PROJECT_SLUG)
+PROJECT_DESCRIPTION = 'A happy, noisy classroom takes the best parts of childhood - the silliness, the spark, the itch to communicate and question - and uses them to the advantage and benefit of learning.'
+SHARE_URL = 'https://happy.thinkcerca.com/'
 
 TWITTER = {
-    'TEXT': "The elusive gray wolf and the people who love/hate them, via @nprnews.",
+    'TEXT': "A happy, noisy classroom takes the best parts of childhood - the silliness, the spark, the itch to communicate and question - and uses them to the advantage and benefit of learning. Via @ThinkCERCA",
     'URL': SHARE_URL,
     # Will be resized to 120x120, can't be larger than 1MB
-    'IMAGE_URL': 'http://apps.npr.org.s3.amazonaws.com/wolves/img/wolf-twitter.jpg'
+    'IMAGE_URL': 'https://happy.thinkcerca.com/img/happy-noisy-classrooms-featured-image.png'
 }
 
 FACEBOOK = {
     'TITLE': PROJECT_NAME,
     'URL': SHARE_URL,
-    'DESCRIPTION': "In much of the American West, the gray wolf is a divisive political issue. NPR's Nathan Rott and photographer David Gilkey spent weeks reporting from Montana, where wolves are no longer protected.",
+    'DESCRIPTION': "A happy, noisy classroom takes the best parts of childhood - the silliness, the spark, the itch to communicate and question - and uses them to the advantage and benefit of learning.",
     # Should be square. No documented restrictions on size
-    'IMAGE_URL': "http://apps.npr.org.s3.amazonaws.com/wolves/img/wolf-facebook.jpg",
+    'IMAGE_URL': "https://happy.thinkcerca.com/img/happy-noisy-classrooms-featured-image.png",
     'APP_ID': '138837436154588'
 }
 
 GOOGLE = {
     # Thumbnail image for Google News / Search.
     # No documented restrictions on resolution or size
-    'IMAGE_URL': TWITTER['IMAGE_URL']
-}
-
-NPR_DFP = {
-    'STORY_ID': '203618536',
-    'TARGET': 'News_NPR_News_Investigations',
-    'ENVIRONMENT': 'NPRTEST',
-    'TESTSERVER': 'true'
+    'IMAGE_URL': 'https://happy.thinkcerca.com/img/happy-noisy-classrooms-featured-image.png'
 }
 
 """
 SERVICES
 """
-GOOGLE_ANALYTICS_ID = 'UA-5828686-4'
+GOOGLE_ANALYTICS_ID = 'UA-36314020-1'
 
 """
 Utilities

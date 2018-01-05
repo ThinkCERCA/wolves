@@ -11,8 +11,25 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="img/thinkcerca-favicon.png" />
 
-    <!-- CHARTBEAT -->
-    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '1392659690788492'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=1392659690788492&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 
     <!-- CSS -->
     {{ CSS.push('less/app.less') }}
@@ -31,14 +48,14 @@
     {# Twitter #}
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@ThinkCERCA">
-    <meta name="twitter:image" content="//www/img/happy-noisy-classrooms-featured-image.png" />
+    <meta name="twitter:image" content="https://happy.thinkcerca.com/img/happy-noisy-classrooms-featured-image.png" />
 
     {# Facebook #}
     <meta property="og:title" content="Creating Happy, Noisy Classrooms" />
     <meta property="og:url" content="https://happy.thinkcerca.com" />
     <meta property="og:type" content="article" />
     <meta property="og:description" content="How to make a difference and boost student engagement." />
-    <meta property="og:image" content="//www/img/happy-noisy-classrooms-featured-image.png" />
+    <meta property="og:image" content="https://happy.thinkcerca.com/img/happy-noisy-classrooms-featured-image.png" />
     <meta property="og:site_name" content="ThinkCERCA.com" />
 
     {# Google News #}
@@ -92,15 +109,14 @@
     {% endblock extra_foot %}
 
     <!-- GOOGLE ANALYTICS -->
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', '{{ GOOGLE_ANALYTICS_ID }}']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36314020-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-36314020-1');
     </script>
 </body>
 </html>
