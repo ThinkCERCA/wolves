@@ -31,16 +31,15 @@
     {# Twitter #}
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@ThinkCERCA">
-    <meta name="twitter:image" content="{{ TWITTER.IMAGE_URL }}" />
+    <meta name="twitter:image" content="//www/img/happy-noisy-classrooms-featured-image.png" />
 
     {# Facebook #}
-    <meta property="og:title" content="{{ FACEBOOK.TITLE }}" />
-    <meta property="og:url" content="{{ FACEBOOK.URL }}" />
+    <meta property="og:title" content="Creating Happy, Noisy Classrooms" />
+    <meta property="og:url" content="https://happy.thinkcerca.com" />
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="{{ FACEBOOK.DESCRIPTION }}" />
-    <meta property="og:image" content="{{ TWITTER.IMAGE_URL }}" />
+    <meta property="og:description" content="How to make a difference and boost student engagement." />
+    <meta property="og:image" content="//www/img/happy-noisy-classrooms-featured-image.png" />
     <meta property="og:site_name" content="ThinkCERCA.com" />
-    <meta property="fb:app_id" content="{{ FACEBOOK.APP_ID }}" />
 
     {# Google News #}
     <meta name="thumbnail" content="{{ GOOGLE.IMAGE_URL }}" />
@@ -90,19 +89,6 @@
     {{ JS.push('js/app.js') }}
     {{ JS.render('js/app-footer.min.js') }}
 
-<!--     <script type="text/javascript">
-        WebFont.load({
-             custom: {
-                 families: [
-                     'Gotham SSm:n4,n7'
-                 ],
-                 urls: [
-                     'https://s.npr.org/templates/css/fonts/GothamSSm.css'
-                 ]
-             },
-             timeout: 10000
-         });
-    </script> -->
 
     {% block extra_foot %}
     {% endblock extra_foot %}
