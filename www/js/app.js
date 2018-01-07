@@ -137,12 +137,12 @@ var on_ambient_timeupdate = function(e) {
     * Handles the time updates for the ambient player.
     * Stops audio based on cue points rather than the end of the clip.
     */
-    if (e.jPlayer.status.currentTime > parseInt(ambient_end, 0)) {
+    // if (e.jPlayer.status.currentTime > parseInt(ambient_end, 0)) {
 
-        // Don't pause the player, stop the player.
-        $ambient_player.jPlayer('stop');
-        currently_playing = false;
-    }
+    //     // Don't pause the player, stop the player.
+    //     $ambient_player.jPlayer('stop');
+    //     currently_playing = false;
+    // }
 };
 
 var play_audio = function(times) {
@@ -554,7 +554,7 @@ $(document).ready(function() {
         cssSelectorAncestor: '#jp_container_2',
         loop: false,
         supplied: 'mp3, oga',
-        timeupdate: on_ambient_timeupdate,
+        // timeupdate: on_ambient_timeupdate,
         volume: volume_ambient_active
     });
 

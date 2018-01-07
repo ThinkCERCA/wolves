@@ -590,7 +590,7 @@ color: #fff;
 		}
 	}	
 
-	p, li {
+	p {
 		font-size: 17px;
 		line-height: 1.4;
 		margin: 30px 0;
@@ -600,6 +600,7 @@ color: #fff;
 			line-height: 1.7;
 		}
 	}
+
 
 	.img-responsive {
 		width: 100%;
@@ -1278,6 +1279,141 @@ footer {
 }
 
 #conclusion .cta_button {
-	margin-top: 30px;
+	margin-top: 0;
 	margin-left: 0;
+}
+
+//Hubspot Form
+
+.hbspt-form {
+	input[type="text"] {
+		width: 100%;
+	    display: block;
+	    border: 1px #ddd solid;
+	    font-family: "Roboto",sans-serif;
+	    font-size: 14px;
+	    line-height: 20px;
+	    font-weight: normal;
+	    border-radius: 5px;
+	    margin: 0;
+	    color: #555;
+	    background: rgba(255,255,255,0.8);
+	}
+
+	.field div.input {
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+
+	legend {
+		display: none;
+	}
+
+	.stacked label {
+		display: block;
+	    float: none;
+	    width: auto;
+	    font-weight: bold;
+	    text-align: left;
+	    line-height: 20px;
+	    padding-top: 0;
+	    margin-bottom: 4px;
+	}
+
+	.stacked .field {
+		margin-bottom: 18px;
+	}
+
+	.stacked {
+		padding-left: 0;
+	}
+}
+
+.hbspt-form label {
+  float: left;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.hbspt-form .input {
+  width: 96%;
+  float: left;
+  display: inline-block;
+  margin-top: 0 !important;
+}
+
+.hbspt-form .input .hs-input,
+.hbspt-form .input .hs-input {
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+  color: #7d7d7d;
+  padding: 5px;
+}
+
+.hbspt-form .input .hs-input {
+  border: solid 1px #e2e5e8;
+  font-size: 16px;
+  font-weight: 500;
+  color: #5b6770;
+  font-family: 'Roboto','Helvetica',Arial,sans-serif;
+  font-weight: normal;
+  border-radius: 4px;
+}
+
+.hbspt-form ul.inputs-list.multi-container {
+  clear: both;
+}
+
+.hbspt-form .hs-form-radio label {
+  float: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hbspt-form .hs-form-radio label input.hs-input {
+  width: 40px;
+}
+
+.hbspt-form .input .hs-form-radio label input.hs-input {
+  height: auto;
+}
+
+.hbspt-form .hs_submit .hs-button.primary.large {
+  margin: 0;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: #70c216;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.hbspt-form label,
+.hbspt-form legend {
+  color: #5b6770;
+  margin-top: 15px;
+  float: left;
+}
+
+.hbspt-form label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.hbspt-form legend {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.hbspt-form .hs_submit .hs-button.primary.large {
+  padding: 10px 30px 10px 30px;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
